@@ -4,39 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Ishaan Gosain</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../projects/index.html">Projects</a>
-        <a href="../contact/index.html">Contact</a>
-        <a href="../resume/index.html">Resume</a>
-        <a href="https://github.com/Igosain08" target="_blank">GitHub</a>
-      </nav>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../contact/index.html" class="current">Contact</a>
+    <a href="../resume/index.html">Resume</a>
+    <a href="https://github.com/Igosain08" target="_blank">GitHub</a>
+  </nav>
+  
+  
       
 
   <form action="mailto:ishaangosain08@gmail.com" method="GET">
-    <label>
-      Email:<br>
-      <input type="email" name="email" required>
-    </label>
-    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
   
-    <label>
-      Subject:<br>
-      <input name="subject" required>
-    </label>
-    <br><br>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
   
-    <label>
-      Body:<br>
-      <textarea name="body" rows="6" cols="40" required></textarea>
-    </label>
-    <br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
   
-    <button>Submit</button>
+    <button type="submit">Send</button>
   </form>
+  
   
     
 </body>
