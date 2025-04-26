@@ -3,7 +3,7 @@ import { fetchJSON, renderProjects } from './global.js';
 async function displayLatestProjects() {
   try {
     // Fetch the data from projects.json
-    const projects = await fetchJSON('./lib/projects.json');
+    const projects = await fetchJSON('/lib/projects.json');
 
     // Get the first 3 projects
     const latestProjects = projects.slice(0, 3);
