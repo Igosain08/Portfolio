@@ -1,4 +1,4 @@
-import { fetchJSON, renderProjects } from '../global.js';
+import { fetchJSON, renderProjects } from './global.js';
 
 async function displayLatestProjects() {
   try {
@@ -23,7 +23,7 @@ async function displayLatestProjects() {
 
 // Call the function to display the latest projects
 displayLatestProjects();
-import { fetchGitHubData } from '../global.js';
+import { fetchGitHubData } from './global.js';
 
 // Function to display GitHub profile stats
 async function displayGitHubProfileStats() {
