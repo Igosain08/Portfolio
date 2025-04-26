@@ -12,7 +12,7 @@ const pages = [
 // Detect environment: localhost or GitHub Pages
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"
-  : "/Portfolio/"; // 🔁 Replace with your actual GitHub repo name
+  : "/portfoliomain/"; // 🔁 Replace with your actual GitHub repo name
 
 // Create and insert nav
 let nav = document.createElement('nav');
