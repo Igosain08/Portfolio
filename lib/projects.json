@@ -1,0 +1,64 @@
+[
+    {
+      "title": "DeepStockXAI – Stock Trend Forecasting with Explainability",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Used LSTM and Transformer models to predict short-term stock price trends, integrating SHAP values for explainability, all visualized in a Streamlit dashboard."
+    },
+   
+    {
+      "title": "Sentiment-Based Playlist Recommender",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Recommended personalized Spotify playlists using blog or tweet sentiment, TF-IDF similarity on song comments, and Spotify feature matching."
+    },
+    {
+      "title": "Apple Financial Chatbot using LangChain",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Developed an RAG-powered chatbot to answer questions from Apple’s 10-K filings and scraped financial news using BeautifulSoup with 85% accuracy."
+    },
+    {
+      "title": "Monte Carlo Stock Simulator",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Streamlit app for simulating future stock prices using Brownian motion and Monte Carlo simulations with adjustable inputs."
+    },
+    {
+      "title": "Power Outage Classification with Fairness",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Classified outage causes using machine learning, while evaluating fairness across groups with permutation tests and total variation distance."
+    },
+  
+    {
+        "title": "Perspiciatis consectetur assumenda repudiandae?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Distinctio natus eos, eius dolores tenetur excepturi. Facilis iste corporis, minus quaerat ab hic id. Distinctio similique possimus odit, quos repudiandae, dolorem excepturi ipsa quaerat, tempore id ullam cum inventore?"
+    },
+    {
+        "title": "Reiciendis, praesentium nostrum. Voluptatibus.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Deserunt corrupti minus inventore optio aliquid vero? Voluptates ipsam dolorem nemo pariatur laboriosam voluptatibus, provident similique? Officia quaerat, delectus expedita et perspiciatis nobis nemo incidunt maiores aperiam nostrum obcaecati consequuntur!"
+    },
+    {
+        "title": "Itaque ipsum sed alias!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Aspernatur ad quod nobis eligendi pariatur dolore natus in quasi? Suscipit delectus libero soluta ad. Officia eligendi, inventore cupiditate aliquam dolorem blanditiis accusamus, ut, incidunt vero sit magni doloremque modi?"
+    },
+    {
+        "title": "Maxime rem distinctio corporis.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Ut officia facere architecto odio quia optio illo autem omnis nemo, ex magnam illum accusamus, explicabo error minus voluptate provident maiores. Qui voluptas tempore nisi aperiam non doloribus inventore adipisci!"
+    },
+    {
+        "title": "Autem quasi repellendus commodi.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Aliquid dolor quaerat officiis, distinctio exercitationem quibusdam, voluptate rerum dolore velit quia provident unde, qui suscipit vero ullam deleniti corrupti nemo! Quibusdam eum quaerat, doloremque eligendi nesciunt similique nemo maiores?"
+    },
+    {
+        "title": "Repellat deleniti accusamus quia.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Nihil dignissimos voluptatibus nesciunt in. Qui porro architecto hic eveniet! Quos neque dolorem nisi ullam fugit reiciendis reprehenderit nam ratione voluptas suscipit? Laudantium quae quibusdam praesentium optio repellendus, vero cupiditate?"
+    },
+    {
+        "title": "Sapiente ad nam totam.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Porro maxime ex consectetur exercitationem vitae, expedita quos inventore nisi deleniti, fugiat voluptatem repellendus a sapiente nihil in, facere distinctio beatae aliquid. Quia corporis molestias beatae harum. Pariatur, quo illum!"
+    }
+]
