@@ -1,56 +1,55 @@
-console.log("IT’S ALIVE!");
+console.log("IT'S ALIVE!");
 
-// Define all site pages
-const pages = [
-  { url: 'index.html', title: 'Home' },
-  { url: 'projects/index.html', title: 'Projects' },
-  { url: 'contact/index.html', title: 'Contact' },
-  { url: 'resume/index.html', title: 'Resume' },
-  { url: 'https://github.com/Igosain08', title: 'GitHub' },
+
+function $$(selector, context = document) {
+  return Array.from(context.querySelectorAll(selector));
+}
+
+
+let pages = [
+  { url: "", title: "Home" },
+  { url: "projects/", title: "Projects" },
+  { url: "contact/", title: "Contact" },
+  { url: "resume/", title: "Resume" },
+  { url: "https://github.com/Igosain08", title: "GitHub" }
 ];
 
-// Detect environment: localhost or GitHub Pages
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"
-  : "/Portfolio/"; // 🔁 Replace with your actual GitHub repo name
+const BASE_PATH =
+  location.hostname === "localhost" || location.hostname === "127.0.0.1"
+    ? "/"
+    : "/portfolio/"; // 
 
-// Create and insert nav
-let nav = document.createElement('nav');
+let nav = document.createElement("nav");
 document.body.prepend(nav);
 
-// Loop through pages and build links
 for (let p of pages) {
-  let url = p.url;
-  let title = p.title;
-
-  // Add BASE_PATH to relative URLs
-  if (!url.startsWith('http')) {
-    url = BASE_PATH + url;
+    let url = p.url;
+    let title = p.title;
+  
+    url = !url.startsWith("http") ? BASE_PATH + url : url;
+  
+    let a = document.createElement("a");
+    a.href = url;
+    a.textContent = title;
+  
+    a.classList.toggle(
+      "current",
+      a.host === location.host && a.pathname === location.pathname
+    );
+  
+    if (a.host !== location.host) {
+      a.target = "_blank";
+    }
+  
+    nav.append(a);
   }
 
-  // Create <a> tag
-  let a = document.createElement('a');
-  a.href = url;
-  a.textContent = title;
-
-  // Add "current" class if this is the current page
-  a.classList.toggle(
-    'current',
-    a.host === location.host && a.pathname === location.pathname
-  );
-
-  // Open external links in a new tab
-  a.toggleAttribute('target', a.host !== location.host);
-
-  // Add to nav
-  nav.append(a);
-}
-document.body.insertAdjacentHTML(
+  document.body.insertAdjacentHTML(
     'afterbegin',
     `
     <label class="color-scheme">
       Theme:
-      <select>
+      <select id="theme-select">
         <option value="light dark">Automatic</option>
         <option value="light">Light</option>
         <option value="dark">Dark</option>
@@ -58,65 +57,49 @@ document.body.insertAdjacentHTML(
     </label>
     `
   );
-  const isDarkMode = matchMedia('(prefers-color-scheme: dark)').matches;
-  console.log(`Your system prefers ${isDarkMode ? 'Dark' : 'Light'} mode`);
-// STEP 4: Dark mode switch functionality
-const select = document.querySelector('.color-scheme select');
 
-function setColorScheme(colorScheme) {
-  // Set the CSS property
-  document.documentElement.style.setProperty('color-scheme', colorScheme);
+  const select = document.querySelector("#theme-select");
 
-  // Update dropdown
-  select.value = colorScheme;
-
-  // Save to localStorage
-  localStorage.colorScheme = colorScheme;
+if ("colorScheme" in localStorage) {
+  const savedScheme = localStorage.colorScheme;
+  document.documentElement.style.setProperty("color-scheme", savedScheme);
+  select.value = savedScheme;
 }
 
-// On change → update color scheme
-select.addEventListener('input', (event) => {
-  setColorScheme(event.target.value);
+select.addEventListener("input", function (event) {
+  const value = event.target.value;
+  console.log("Color scheme changed to", value);
+  document.documentElement.style.setProperty("color-scheme", value);
+  localStorage.colorScheme = value;
 });
 
-// On page load → use saved preference if it exists
-if ("colorScheme" in localStorage) {
-  setColorScheme(localStorage.colorScheme);
-}
-const form = document.querySelector('form');
+const form = document.querySelector("form");
 
-form?.addEventListener('submit', function (event) {
-  event.preventDefault(); // prevent weird default mailto behavior
+form?.addEventListener("submit", function (event) {
+  event.preventDefault(); 
 
   const data = new FormData(form);
+  let url = form.action + "?";
   const params = [];
 
   for (let [name, value] of data) {
     params.push(`${name}=${encodeURIComponent(value)}`);
   }
 
-  const mailtoURL = `${form.action}?${params.join('&')}`;
-  console.log("Opening email with:", mailtoURL);
+  url += params.join("&");
 
-  location.href = mailtoURL;
+  location.href = url;
 });
-
-// global.js
 
 export async function fetchJSON(url) {
   try {
-    // 1. Fetch the JSON file from the given URL
+    // Fetch the JSON file from the given URL
     const response = await fetch(url);
 
-    // 2. Handle unsuccessful response
     if (!response.ok) {
       throw new Error(`Failed to fetch projects: ${response.statusText}`);
     }
 
-    // Optional: Log the response for debugging
-    console.log(response);
-
-    // 3. Parse and return the JSON data
     const data = await response.json();
     return data;
 
@@ -124,43 +107,31 @@ export async function fetchJSON(url) {
     console.error('Error fetching or parsing JSON data:', error);
   }
 }
-// global.js
 
-export function renderProjects(project, containerElement, headingLevel = 'h2') {
-  // Create a new <article> element
-  const article = document.createElement('article');
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  containerElement.innerHTML = '';
+
+  const countDisplay = document.querySelector('.projects-title');
+  if (countDisplay) {
+    countDisplay.textContent = projects.length;
+  }
   
-  // Add dynamic heading level
-  const titleElement = document.createElement(headingLevel);
-  titleElement.textContent = project.title;
-  article.appendChild(titleElement);
+  for (const project of projects) {
+    const article = document.createElement('article');
 
-  // Add project image (handle missing image gracefully)
-  const imageElement = document.createElement('img');
-  if (project.image) {
-    imageElement.src = project.image;
-    imageElement.alt = project.title;
-  } else {
-    imageElement.alt = "Image not available";
+    article.innerHTML = `
+    <${headingLevel}>${project.title}</${headingLevel}>
+    <img src="${project.image}" alt="${project.title}">
+    <div>
+      <p>${project.description}</p>
+      <p class="year">c. ${project.year}</p>
+    </div>
+`;
+
+    containerElement.appendChild(article);
   }
-  article.appendChild(imageElement);
-
-  // Add project description
-  const descriptionElement = document.createElement('p');
-  descriptionElement.textContent = project.description || "No description available.";
-  article.appendChild(descriptionElement);
-
-  // Append the article to the container
-  containerElement.appendChild(article);
 }
-export async function fetchGitHubData(username) {
-  try {
-    const response = await fetch(`https://api.github.com/users/${username}`);
-    if (!response.ok) {
-      throw new Error(`GitHub user not found: ${response.statusText}`);
-    }
-    return response.json(); // Parse the JSON response
-  } catch (error) {
-    console.error('Error fetching GitHub data:', error);
-  }
+
+export async function fetchGitHubData() {
+  return fetchJSON(`https://api.github.com/users/Igosain08`);
 }

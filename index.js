@@ -1,48 +1,21 @@
-import { fetchJSON, renderProjects } from './global.js';
+import { fetchJSON, renderProjects, fetchGitHubData } from './global.js';
 
-async function displayLatestProjects() {
-  try {
-    // Fetch the data from projects.json
-    const projects = await fetchJSON('lib/projects.json');
+const projects = await fetchJSON('./lib/projects.json');
+const latestProjects = projects.slice(0, 3);
 
-    // Get the first 3 projects
-    const latestProjects = projects.slice(0, 3);
+const projectsContainer = document.querySelector('.projects');
+renderProjects(latestProjects, projectsContainer, 'h2');
 
-    // Get the container element where the projects will be rendered
-    const projectsContainer = document.querySelector('.projects');
-    
+const githubData = await fetchGitHubData();
+const profileStats = document.querySelector('#profile-stats');
 
-    // Render each project using the renderProjects function
-    latestProjects.forEach(project => {
-      renderProjects(project, projectsContainer, 'h2');
-    });
-  } catch (error) {
-    console.error('Error loading projects:', error);
+if (profileStats) {
+    profileStats.innerHTML = `
+      <dl>
+        <dt>Public Repos:</dt><dd>${githubData.public_repos}</dd>
+        <dt>Public Gists:</dt><dd>${githubData.public_gists}</dd>
+        <dt>Followers:</dt><dd>${githubData.followers}</dd>
+        <dt>Following:</dt><dd>${githubData.following}</dd>
+      </dl>
+    `;
   }
-}
-
-// Call the function to display the latest projects
-displayLatestProjects();
-import { fetchGitHubData } from './global.js';
-
-// Function to display GitHub profile stats
-async function displayGitHubProfileStats() {
-  const githubData = await fetchGitHubData('Igosain08'); // Replace with your GitHub username
-
-  // Select the elements where stats will be shown
-  const publicRepos = document.getElementById('public-repos');
-  const publicGists = document.getElementById('public-gists');
-  const followers = document.getElementById('followers');
-  const following = document.getElementById('following');
-
-  if (githubData) {
-    // Display GitHub data in the respective <dd> elements
-    publicRepos.textContent = githubData.public_repos;
-    publicGists.textContent = githubData.public_gists;
-    followers.textContent = githubData.followers;
-    following.textContent = githubData.following;
-  }
-}
-
-// Call the function to display the stats
-displayGitHubProfileStats();

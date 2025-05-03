@@ -133,7 +133,7 @@ button:hover {
 
 h1 {
   font-size: 400%;
-  margin-bottom: 1rem;
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -146,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent);
   text-decoration: underline;
 }
+
 .color-scheme {
   position: absolute;
   top: 1rem;
@@ -154,35 +155,123 @@ h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
 }
 
-/* Inherit font for all form controls */
 input,
 textarea,
 button,
 select {
   font: inherit;
 }
-.stat-blocks {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+
+#profile-stats {
+  max-width: 900px;
+  margin: 4rem auto;
+  font-family: system-ui, sans-serif;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.stat-box {
-  flex: 1 1 150px;
-}
-
-.stat-label {
-  color: canvastext;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  margin-bottom: 0.25rem;
-}
-
-.stat-value {
-  font-size: 2.5rem;
+#profile-stats dt {
+  font-size: 1.1rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6c7382; /* muted gray */
+  margin-bottom: 0.4rem;
+}
+
+#profile-stats dd {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin: 0;
   color: canvastext;
+  line-height: 1;
+}
+
+.projects .year {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-item .swatch {
+  width: 1em;
+  height: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 0.25em;
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.container svg {
+  max-width: 20em;
+  flex-shrink: 0;
+}
+
+.legend {
+  flex: 1;
+}
+
+/* Step 5.1: Smooth transition on wedges */
+#projects-pie-plot path {
+  transition: 300ms;
+}
+
+/* Step 5.1: Dim all non-hovered wedges when one is hovered */
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+path {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
 }
