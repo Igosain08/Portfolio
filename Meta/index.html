@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Code Meta-Analysis</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  
+
+  <h1>Codebase Meta-Analysis</h1>
+  <p>This page displays statistics and interactive visualizations about the structure and history of this codebase.</p>
+
+  <!-- Summary stats -->
+  <div id="stats"></div>
+
+  <!-- Commit time scatterplot -->
+  <h2>Commits by time of day</h2>
+  <p id="selection-count">No commits selected</p>
+  <div id="chart"></div>
+
+  <!-- Tooltip -->
+  <dl id="commit-tooltip" class="info tooltip" hidden>
+    <dt>Commit</dt>
+    <dd><a href="" id="commit-link" target="_blank"></a></dd>
+
+    <dt>Date</dt>
+    <dd id="commit-date"></dd>
+
+    <dt>Time</dt>
+    <dd id="commit-time"></dd>
+
+    <dt>Author</dt>
+    <dd id="commit-author"></dd>
+
+    <dt>Lines changed</dt>
+    <dd id="commit-lines"></dd>
+  </dl>
+
+  <!-- Language breakdown -->
+  <h2>Language breakdown of selected commits</h2>
+  <dl id="language-breakdown" class="stats"></dl>
+  <script type="module" src="../global.js"></script>
+</body>
+</html>
