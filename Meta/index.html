@@ -4,10 +4,38 @@
   <meta charset="UTF-8" />
   <title>Code Meta-Analysis</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .scrolly-section {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 4rem;
+    }
+
+    .story {
+      flex: 1;
+      margin-right: 2rem;
+    }
+
+    .viz {
+      position: sticky;
+      top: 2rem;
+      flex: 1;
+      height: 600px;
+    }
+
+    .step {
+      margin-bottom: 3rem;
+      padding: 1rem;
+      border-left: 4px solid #ccc;
+    }
+
+    #scatter-plot {
+      margin-bottom: 8rem;
+    }
+  </style>
   <script type="module" src="main.js"></script>
 </head>
 <body>
-  
 
   <h1>Codebase Meta-Analysis</h1>
   <p>This page displays statistics and interactive visualizations about the structure and history of this codebase.</p>
@@ -15,10 +43,27 @@
   <!-- Summary stats -->
   <div id="stats"></div>
 
-  <!-- Commit time scatterplot -->
-  <h2>Commits by time of day</h2>
-  <p id="selection-count">No commits selected</p>
-  <div id="chart"></div>
+  <!-- Progress slider -->
+  <label for="commit-progress">Progress through time:</label>
+  <input type="range" id="commit-progress" min="0" max="100" value="100" />
+
+  <!-- First scrollytelling: scatter plot (evolution over time) -->
+  <div class="scrolly-section" id="scrolly-1">
+    <div class="story" id="scatter-story"></div>
+    <div class="viz" id="scatter-plot">
+      <div id="chart"></div>
+      <p id="selection-count">No commits selected</p>
+      <dl id="language-breakdown" class="stats"></dl>
+    </div>
+  </div>
+
+  <!-- Second scrollytelling: file dot view (codebase evolution) -->
+  <div class="scrolly-section" id="scrolly-2">
+    <div class="story" id="file-story"></div>
+    <div class="viz" id="file-viz">
+      <dl id="files"></dl>
+    </div>
+  </div>
 
   <!-- Tooltip -->
   <dl id="commit-tooltip" class="info tooltip" hidden>
@@ -29,7 +74,7 @@
     <dd id="commit-date"></dd>
 
     <dt>Time</dt>
-    <dd id="commit-time"></dd>
+    <dd id="commit-tooltip-time"></dd>
 
     <dt>Author</dt>
     <dd id="commit-author"></dd>
@@ -38,9 +83,6 @@
     <dd id="commit-lines"></dd>
   </dl>
 
-  <!-- Language breakdown -->
-  <h2>Language breakdown of selected commits</h2>
-  <dl id="language-breakdown" class="stats"></dl>
   <script type="module" src="../global.js"></script>
 </body>
 </html>
