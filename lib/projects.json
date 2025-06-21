@@ -1,76 +1,69 @@
 [
-    {
-      "title": "DeepStockXAI – Stock Trend Forecasting with Explainability",
-      "year":2025,
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Used LSTM and Transformer models to predict short-term stock price trends, integrating SHAP values for explainability, all visualized in a Streamlit dashboard."
-    },
-   
-    {
-      "title": "Sentiment-Based Playlist Recommender",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "year":2025,
-      "description": "Recommended personalized Spotify playlists using blog or tweet sentiment, TF-IDF similarity on song comments, and Spotify feature matching."
-    },
-    {
+  {
+      "title": "Mood-Based Music Recommendation System",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+      "description": "Won 1st place at DS3 Showcase. Built emotion-aware recommendation system processing 2,000 songs using RoBERTa transformer for YouTube comment analysis, achieving 10x performance improvement through optimized K-means clustering."
+  },
+  {
+      "title": "The Seismic Lottery: Earthquake Impact Visualization",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1547683905-f686c993aae5?w=400&h=300&fit=crop",
+      "description": "Won Best Project & People's Choice Awards (top 8% of 182 students) in DSC 106. Interactive 3D visualization using D3.js v7 demonstrating infrastructure's role in disaster impact with 60fps performance."
+  },
+  {
+      "title": "Stock Price Prediction with Deep Learning",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=300&fit=crop",
+      "description": "Collaborated with Triton Quantitative Trading club to build ensemble system combining LSTM, GRU, and hybrid architectures achieving 82.4% R² score. Integrated VADER sentiment analysis and Monte Carlo simulations."
+  },
+  {
+      "title": "RideRipple: Tracing Boston's Bike Currents",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      "description": "Data visualization project analyzing Boston's bike-sharing patterns and traffic flow using Hubway data. Created interactive visualizations to trace cycling patterns across the city."
+  },
+  {
       "title": "Apple Financial Chatbot using LangChain",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "year":2023,
-      "description": "Developed an RAG-powered chatbot to answer questions from Apple’s 10-K filings and scraped financial news using BeautifulSoup with 85% accuracy."
-    },
-    {
-      "title": "Monte Carlo Stock Simulator",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "year":2024,
-      "description": "Streamlit app for simulating future stock prices using Brownian motion and Monte Carlo simulations with adjustable inputs."
-    },
-    {
-      "title": "Power Outage Classification with Fairness",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "year":2025,
-      "description": "Classified outage causes using machine learning, while evaluating fairness across groups with permutation tests and total variation distance."
-    },
+      "year": 2024,
+      "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=300&fit=crop",
+      "description": "Developed RAG-powered chatbot to analyze Apple's 10-K filings using LangChain and Hugging Face, achieving 85% response accuracy with context-aware NLP and vector embeddings."
+  },
+  {
+      "title": "Power Outage Prediction: Climate Analysis",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=300&fit=crop",
+      "description": "Built ML pipeline processing 1,540 outage records with Random Forest classifier achieving 75.41% accuracy. Implemented NMAR missingness analysis and validated model fairness across demographic groups."
+  },
+  {
+      "title": "Family Feud Game",
+      "year": 2024,
+      "image": "https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=400&h=300&fit=crop",
+      "description": "Python-based implementation of the popular Family Feud game show with interactive gameplay features and scoring system."
+  },
+  {
+      "title": "Image Processing Application",
+      "year": 2024,
+      "image": "https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=400&h=300&fit=crop",
+      "description": "Python application for image manipulation and processing with various filters and transformations including edge detection, blur effects, and color adjustments."
+  },
+  {
+      "title": "Mammogram Mass Detection Project",
+      "year": 2024,
+      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
+      "description": "Machine learning project for detecting masses in mammogram images using Jupyter Notebook, implementing classification algorithms for medical imaging analysis."
+  },
+  {
+      "title": "Coding Assistant",
+      "year": 2024,
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop",
+      "description": "AI-powered coding assistant built with Python to help developers with code suggestions, syntax correction, and debugging assistance."
+  },
   
-    {
-        "title": "Perspiciatis consectetur assumenda repudiandae?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year":2023,
-        "description": "Distinctio natus eos, eius dolores tenetur excepturi. Facilis iste corporis, minus quaerat ab hic id. Distinctio similique possimus odit, quos repudiandae, dolorem excepturi ipsa quaerat, tempore id ullam cum inventore?"
-    },
-    {
-        "title": "Reiciendis, praesentium nostrum. Voluptatibus.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year":2024,
-        "description": "Deserunt corrupti minus inventore optio aliquid vero? Voluptates ipsam dolorem nemo pariatur laboriosam voluptatibus, provident similique? Officia quaerat, delectus expedita et perspiciatis nobis nemo incidunt maiores aperiam nostrum obcaecati consequuntur!"
-    },
-    {
-        "title": "Itaque ipsum sed alias!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year":2024,
-        "description": "Aspernatur ad quod nobis eligendi pariatur dolore natus in quasi? Suscipit delectus libero soluta ad. Officia eligendi, inventore cupiditate aliquam dolorem blanditiis accusamus, ut, incidunt vero sit magni doloremque modi?"
-    },
-    {
-        "title": "Maxime rem distinctio corporis.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year":2025,
-        "description": "Ut officia facere architecto odio quia optio illo autem omnis nemo, ex magnam illum accusamus, explicabo error minus voluptate provident maiores. Qui voluptas tempore nisi aperiam non doloribus inventore adipisci!"
-    },
-    {
-        "title": "Autem quasi repellendus commodi.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year":2023,
-        "description": "Aliquid dolor quaerat officiis, distinctio exercitationem quibusdam, voluptate rerum dolore velit quia provident unde, qui suscipit vero ullam deleniti corrupti nemo! Quibusdam eum quaerat, doloremque eligendi nesciunt similique nemo maiores?"
-    },
-    {
-        "title": "Repellat deleniti accusamus quia.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year":2023,
-        "description": "Nihil dignissimos voluptatibus nesciunt in. Qui porro architecto hic eveniet! Quos neque dolorem nisi ullam fugit reiciendis reprehenderit nam ratione voluptas suscipit? Laudantium quae quibusdam praesentium optio repellendus, vero cupiditate?"
-    },
-    {
-        "title": "Sapiente ad nam totam.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year":2025,
-        "description": "Porro maxime ex consectetur exercitationem vitae, expedita quos inventore nisi deleniti, fugiat voluptatem repellendus a sapiente nihil in, facere distinctio beatae aliquid. Quia corporis molestias beatae harum. Pariatur, quo illum!"
-    }
+  {
+      "title": "Monte Carlo Stock Simulator",
+      "year": 2024,
+      "image": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=400&h=300&fit=crop",
+      "description": "Streamlit application for simulating future stock prices using Brownian motion and Monte Carlo methods with adjustable volatility and drift parameters."
+  }
 ]

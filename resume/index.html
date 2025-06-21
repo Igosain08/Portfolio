@@ -8,51 +8,47 @@
 </head>
 <body>
 
-  <!-- <nav>
-    <a href="../index.html">Home</a>
-    <a href="../projects/index.html">Projects</a>
-    <a href="../contact/index.html">Contact</a>
-    <a href="../resume/index.html" class="current">Resume</a>
-    <a href="https://github.com/Igosain08" target="_blank">GitHub</a>
-  </nav> -->
-  
-  
-      
-
   <h1>Ishaan Gosain – Resume</h1>
+  
+  <div class="contact-info">
+    <p>San Diego, CA • <a href="mailto:ishaangosain08@gmail.com">ishaangosain08@gmail.com</a> • 858-372-5548</p>
+    <p><a href="www.linkedin.com/in/ishaan-gosain-275aa6286" target="_blank">linkedin.com/in/ishaangosain</a> • <a href="https://github.com/Igosain08" target="_blank">github.com/Igosain08</a></p>
+  </div>
 
   <section>
     <header><h2>Education</h2></header>
     <article>
       <h3>University of California, San Diego</h3>
       <time datetime="2023-09">Sep 2023</time> – <time datetime="2027-03">Mar 2027</time>
-      <p>Bachelor of Science in Data Science<br>UC GPA: 3.93</p>
+      <p><strong>Bachelor of Science in Data Science | GPA: 3.96/4.0</strong><br>San Diego, CA</p>
+      <p><strong>Relevant Coursework:</strong> Machine Learning (DSC 140A), Scalable Analytics (DSC 102), Data Management (DSC 100), Data Visualization (DSC 106), Practice of Data Science (DSC 80), Theoretical Foundations (DSC 40A/B), Data Structures & Algorithms (DSC 30), Mathematical Reasoning (MATH 109), Statistical Methods (MATH 183)</p>
     </article>
   </section>
 
   <section>
-    <header><h2>Work Experience</h2></header>
+    <header><h2>Experience</h2></header>
 
     <article>
-      <h3>Data Science Team Lead – DS3, UCSD</h3>
-      <time datetime="2025-01">Jan 2025</time> – Present
+      <h3>Data Science Team Lead | 1st Place Winner - DS3 Showcase</h3>
+      <h4>DS3-Data Science Student Society at UCSD</h4>
+      <time datetime="2025-01">Jan 2025</time> – <time datetime="2025-06">June 2025</time> | San Diego, CA
       <ul>
-        <li>Designing a music recommendation engine using TF-IDF and BERT, mapping user text to songs via YouTube scraping and Spotify metadata.</li>
-        <li>Building scalable pipelines and storing song metadata in a hashmap for optimized similarity lookup.</li>
-        <li>Developing a user-adaptive ranking system using OOP and XGBoost to dynamically fine-tune weights.</li>
-        <li>Implementing feedback mechanisms in a Streamlit-based UI.</li>
-        <li>Evaluating performance using F1-score, MAP, and Precision@k.</li>
+        <li>Led team of 4 to develop <strong>emotion-aware music recommendation system</strong> processing <strong>2,000 songs</strong>, achieving <strong>10x performance improvement</strong> (200ms→20ms) through optimized clustering approach</li>
+        <li>Implemented <strong>RoBERTa transformer</strong> for emotion extraction from YouTube comments, achieving <strong>89% user satisfaction</strong> with multi-metric K-means clustering and similarity-based recommendation matching</li>
+        <li>Engineered <strong>XGBoost ensemble model</strong> with GridSearchCV hyperparameter tuning, reducing prediction error by <strong>42%</strong> (MSE: 1.621→0.940) through regularization and cross-validation</li>
+        <li><strong>Technologies:</strong> Python, PyTorch/RoBERTa, XGBoost, scikit-learn, K-means clustering, YouTube Data API</li>
       </ul>
     </article>
 
     <article>
-      <h3>Data Analytics Intern – GSPANN Technologies, India</h3>
-      <time datetime="2024-06">June 2024</time> – <time datetime="2024-08">Aug 2024</time>
+      <h3>Data Analytics Intern</h3>
+      <h4>GSPANN Technologies, Inc.</h4>
+      <time datetime="2024-06">June 2024</time> – <time datetime="2024-08">Aug 2024</time> | Gurgaon, India
       <ul>
-        <li>Built an intelligent chatbot using LangChain and Hugging Face RAG to analyze Apple Inc.'s 10-K filings.</li>
-        <li>Scraped real-time financial data with BeautifulSoup and processed PDFs using PyPDFLoader.</li>
-        <li>Embedded text using Hugging Face for better NLP response accuracy.</li>
-        <li>Built a Streamlit interface with chat history and unit-tested backend for performance improvement.</li>
+        <li>Developed <strong>RAG chatbot</strong> using <strong>LangChain</strong> and <strong>Hugging Face</strong> models to analyze Apple's 10-K filings, achieving <strong>85% response accuracy</strong> with context-aware NLP and vector embeddings</li>
+        <li>Built <strong>automated data pipeline</strong> using Beautiful Soup for web scraping and PyPDFLoader for document processing, creating comprehensive knowledge base for financial document analysis</li>
+        <li>Designed <strong>Streamlit interface</strong> with chat history management and implemented comprehensive unit tests for deployment validation and continuous integration</li>
+        <li><strong>Technologies:</strong> Python, LangChain, Hugging Face, Beautiful Soup, Streamlit, PyPDFLoader, Chroma, embeddings</li>
       </ul>
     </article>
   </section>
@@ -61,68 +57,49 @@
     <header><h2>Projects</h2></header>
 
     <article>
-      <h3>Watts The Problem – Power Outage Prediction (DSC 80)</h3>
-      <time datetime="2025-02">Feb 2025</time> – <time datetime="2025-03">Mar 2025</time>
+      <h3>The Seismic Lottery: Earthquake Impact Visualization | <a href="https://vedvar43789.github.io/earthquakes/" target="_blank">GitHub</a> | <strong>Winner</strong></h3>
+      <time datetime="2025-04">Apr 2025</time> – <time datetime="2025-06">June 2025</time>
       <ul>
-        <li>Cleaned and engineered features on a U.S. outage dataset; handled NMAR missingness via TVD tests.</li>
-        <li>Built a RandomForestClassifier pipeline with preprocessing and tuning (GridSearchCV).</li>
-        <li>Improved test accuracy from 60.6% to 75.4% and F1-score to 0.75.</li>
-        <li>Performed fairness testing using permutation-based weighted precision.</li>
-        <li>Presented via interactive GitHub Pages dashboard with matplotlib and plotly visuals.</li>
+        <li><strong>Won Best Project Award & People's Choice Award</strong> (top 8% of 182 students) in DSC 106, featured on <a href="https://dsc-courses.github.io/dsc106-2025-sp/showcase/" target="_blank">course showcase</a> for creating <strong>interactive 3D earthquake visualization</strong> demonstrating infrastructure's role in disaster impact</li>
+        <li>Built using <strong>D3.js v7</strong> and TopoJSON, featuring real-time globe rotation with magnitude/casualty toggles, educational scroll-based animations, and energy calculator achieving <strong>60fps performance</strong></li>
+        <li>Implemented predictive interface for impact assessment and integrated historical earthquake database, creating compelling narrative about how location matters more than magnitude</li>
       </ul>
     </article>
 
     <article>
-      <h3>Monte Carlo Stock Price Simulation – Triton Quantitative Trading</h3>
-      <time datetime="2024-10">Oct 2024</time> – <time datetime="2024-12">Dec 2024</time>
+      <h3>Stock Price Prediction with Deep Learning | <a href="https://marketscope.streamlit.app/" target="_blank">GitHub</a></h3>
+      <time datetime="2025-03">Mar 2025</time> – <time datetime="2025-04">Apr 2025</time>
       <ul>
-        <li>Developed a stock simulator using GBM and log return analysis.</li>
-        <li>Built a Streamlit UI with user input controls and live Yahoo Finance data.</li>
-        <li>Included dynamic matplotlib visualizations and confidence intervals.</li>
+        <li>Collaborated with <strong>Triton Quantitative Trading</strong> club team to build ensemble system combining <strong>LSTM, GRU, and hybrid architectures</strong> for next-day price prediction, achieving <strong>82.4% R² score</strong></li>
+        <li>Engineered <strong>13 technical indicators</strong> (SMA/EMA, RSI, MACD, Bollinger Bands) and integrated <strong>VADER sentiment analysis</strong> on financial news, implemented <strong>Monte Carlo simulations</strong> (2,000 iterations) for risk assessment</li>
+        <li>Deployed interactive Streamlit dashboard with real-time prediction updates, risk metrics (VaR, Sharpe ratio), and confidence intervals for portfolio analysis</li>
       </ul>
     </article>
 
     <article>
-      <h3>VentureNex – Multi-Language Coding Assistant</h3>
-      <time datetime="2024-09">Sept 2024</time> – <time datetime="2024-10">Oct 2024</time>
+      <h3>Power Outage Prediction: Climate Analysis & Cause Classification | <a href="https://vedvar43789.github.io/watts-the-problem/" target="_blank">Project Website</a></h3>
+      <time datetime="2025-01">Jan 2025</time> – <time datetime="2025-03">Mar 2025</time>
       <ul>
-        <li>Created an AI-powered coding assistant using Ollama and Gradio.</li>
-        <li>Integrated a real-time API for contextual code generation and conversational history.</li>
-        <li>Demonstrated advanced Python, NLP, and UI integration.</li>
+        <li>Built ML pipeline processing <strong>1,540 outage records</strong> with 57 features, implementing <strong>NMAR missingness analysis</strong> using TVD-based permutation testing (p=0.001) for data quality validation</li>
+        <li>Deployed <strong>Random Forest classifier</strong> achieving <strong>75.41% accuracy</strong> (24.8% improvement) with F1-score: 0.75 through feature engineering and hyperparameter optimization</li>
+        <li>Validated model fairness across demographic groups using weighted precision analysis and permutation testing (p=0.108), ensuring unbiased predictions across different customer impact segments</li>
       </ul>
     </article>
   </section>
 
   <section>
-    <header><h2>Additional Information</h2></header>
+    <header><h2>Technical Skills</h2></header>
     <article>
-      <h3>Technical Skills</h3>
-      <ul>
-        <li><strong>Programming:</strong> Python, Java, SQL, R, HTML, MATLAB</li>
-        <li><strong>Tools:</strong> Git, VS Code, IntelliJ</li>
-        <li><strong>Libraries:</strong> NumPy, pandas, scikit-learn, TensorFlow, Tkinter</li>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Languages</h3>
-      <ul>
-        <li>Hindi (Native)</li>
-        <li>English (Fluent)</li>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Interests</h3>
-      <ul>
-        <li>Soccer</li>
-        <li>Body-Building</li>
-        <li>Video Games</li>
+      <ul class="skills">
+        <li><strong>Languages:</strong> Python, SQL, JavaScript, C++</li>
+        <li><strong>ML/AI:</strong> PyTorch, TensorFlow, Scikit-learn, XGBoost, Transformers (RoBERTa), LangChain, Hugging Face, NLTK, VADER</li>
+        <li><strong>Data & Cloud:</strong> Pandas, NumPy, Beautiful Soup, Docker, REST APIs, MySQL, PostgreSQL, Hadoop, GridSearchCV, Chroma</li>
+        <li><strong>Visualization:</strong> D3.js, Matplotlib, Seaborn, Plotly, Tableau, Streamlit, TopoJSON, Scrollama</li>
       </ul>
     </article>
   </section>
-  <script type="module" src="../global.js"></script>
 
+  <script type="module" src="../global.js"></script>
 
 </body>
 </html>
