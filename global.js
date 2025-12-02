@@ -120,14 +120,30 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   for (const project of projects) {
     const article = document.createElement('article');
 
-    article.innerHTML = `
-    <${headingLevel}>${project.title}</${headingLevel}>
-    <img src="${project.image}" alt="${project.title}">
-    <div>
-      <p>${project.description}</p>
-      <p class="year">c. ${project.year}</p>
-    </div>
-`;
+    if (project.link) {
+      // For projects with links, wrap the entire card
+      article.innerHTML = `
+      <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="project-link">
+        <${headingLevel}>${project.title}</${headingLevel}>
+        <img src="${project.image}" alt="${project.title}">
+        <div>
+          <p>${project.description}</p>
+          <p class="year">c. ${project.year}</p>
+          <p class="view-project">🔗 View Project</p>
+        </div>
+      </a>
+      `;
+    } else {
+      // For projects without links, use standard layout
+      article.innerHTML = `
+        <${headingLevel}>${project.title}</${headingLevel}>
+        <img src="${project.image}" alt="${project.title}">
+        <div>
+          <p>${project.description}</p>
+          <p class="year">c. ${project.year}</p>
+        </div>
+      `;
+    }
 
     containerElement.appendChild(article);
   }

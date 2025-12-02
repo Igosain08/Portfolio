@@ -3,37 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ishaan Gosain - Data Science Student & AI Engineer at UC San Diego. Experienced in Gen AI automation, MLOps, and scalable AI systems. AWS Certified AI Practitioner.">
+    <meta name="keywords" content="Data Science, AI Engineer, Machine Learning, MLOps, Python, AWS, UC San Diego">
+    <meta property="og:title" content="Ishaan Gosain - Data Science & AI Portfolio">
+    <meta property="og:description" content="UC San Diego Data Science student with experience in Gen AI automation, MLOps, and award-winning ML projects.">
+    <meta property="og:type" content="website">
     <title>Ishaan Gosain: Personal site and portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://api.github.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
 </head>
 
-
 <body>
-    
-    <header>
-        <h1>Ishaan Gosain</h1>
-        <img src="images/IMG_1997 Background Removed.png" alt="Ishaan Gosain, a Data Science Student at UCSD" width="300" height="300">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Ishaan Gosain</h1>
+                <p class="hero-subtitle">Data Science Student & AI Engineer</p>
+                <p class="hero-description">
+                    Transforming data into intelligent solutions. Currently @ UC San Diego (3.96 GPA) with experience in 
+                    <strong>Gen AI automation</strong>, <strong>MLOps</strong>, and <strong>scalable AI systems</strong>. 
+                    Recent intern at <strong>Accolite x Bounteous</strong> building enterprise AI workflows.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects/" class="btn btn-primary">View Projects</a>
+                    <a href="resume/" class="btn btn-secondary">Resume</a>
+                    <a href="https://github.com/Igosain08" target="_blank" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/IMG_1997 Background Removed.png" alt="Ishaan Gosain, Data Science Student at UCSD" class="profile-image">
+                <div class="floating-badges">
+                    <span class="badge">🏆 1st Place DS3</span>
+                    <span class="badge">⭐ 3.96 GPA</span>
+                    <span class="badge">🚀 Gen AI Intern</span>
+                    <span class="badge">☁️ AWS Certified</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Showcase -->
+    <section class="skills-showcase">
+        <h2>Technical Expertise</h2>
         
-        <p>Data Science Student at UC San Diego</p>
-    </header>
-    
-    <p>Sophomore at UC San Diego (3.96 GPA) building AI systems that actually work. Currently leading a 1st place team at DS3, where we created an emotion-aware music recommendation engine with 10x performance gains. Previously built RAG chatbots for financial analysis at GSPANN. I believe the best solutions come from understanding both the math and the human side of problems. When I'm not optimizing models or visualizing data, you'll find me on the soccer field, hitting PRs at the gym, or gaming with friends.
+        <!-- Core Competencies with Proficiency Bars -->
+        <div class="core-skills">
+            <h3>Core Competencies</h3>
+            <div class="skill-bars">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span class="skill-name">Python & Machine Learning</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="95"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span class="skill-name">Data Visualization (D3.js)</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span class="skill-name">MLOps & DevOps</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span class="skill-name">Full-Stack Development</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Technology Stack -->
+        <div class="tech-stack-grid">
+            <div class="skill-category">
+                <h3>🤖 AI & Machine Learning</h3>
+                <div class="skill-tags">
+                    <span class="tag expert">PyTorch</span>
+                    <span class="tag expert">LangChain</span>
+                    <span class="tag advanced">OpenAI GPT-4</span>
+                    <span class="tag advanced">Transformers</span>
+                    <span class="tag advanced">RAG</span>
+                    <span class="tag expert">RoBERTa</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>☁️ MLOps & DevOps</h3>
+                <div class="skill-tags">
+                    <span class="tag advanced">Kubernetes</span>
+                    <span class="tag expert">Docker</span>
+                    <span class="tag advanced">Jenkins</span>
+                    <span class="tag intermediate">ArgoCD</span>
+                    <span class="tag advanced">n8n</span>
+                    <span class="tag advanced">AWS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>📊 Data & Visualization</h3>
+                <div class="skill-tags">
+                    <span class="tag expert">D3.js</span>
+                    <span class="tag expert">Python</span>
+                    <span class="tag expert">SQL</span>
+                    <span class="tag advanced">Streamlit</span>
+                    <span class="tag advanced">Vector DBs</span>
+                    <span class="tag expert">Pandas</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </p>
-    
+    <!-- Certifications & Awards -->
+    <section class="certifications-section">
+        <h2>Certifications & Recognition</h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <div class="cert-badge">☁️</div>
+                <h3>AWS Certified AI Practitioner</h3>
+                <p>Amazon Web Services • 2025</p>
+                <a href="https://www.credly.com/badges/d6f5e099-8fda-493c-a8df-487083ef6db3/linked_in_profile" target="_blank" class="cert-link">View Credential</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">🏆</div>
+                <h3>1st Place - DS3 Showcase</h3>
+                <p>UCSD Data Science Society • 2025</p>
+                <a href="http://my-music-env-optimized.eba-qwpd3pbm.us-west-2.elasticbeanstalk.com/" target="_blank" class="cert-link">View Project</a>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">🎯</div>
+                <h3>Best Project & People's Choice</h3>
+                <p>DSC 106 Data Visualization • 2025</p>
+                <a href="https://dsc-courses.github.io/dsc106-2025-sp/showcase/" target="_blank" class="cert-link">View Showcase</a>
+            </div>
+        </div>
+    </section>
 
-    <h2>GitHub Stats</h2>
-    <div id="profile-stats">
+    <!-- Impact Metrics -->
+    <section class="impact-metrics">
+        <h2>Industry Impact</h2>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon">⚡</div>
+                <div class="metric-number" data-target="10">0</div>
+                <div class="metric-suffix">x</div>
+                <div class="metric-label">Performance Improvement</div>
+                <div class="metric-desc">Music Recommendation System</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-icon">🤖</div>
+                <div class="metric-number" data-target="60">0</div>
+                <div class="metric-suffix">%</div>
+                <div class="metric-label">Automation Rate</div>
+                <div class="metric-desc">Customer Support Queries</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-icon">👥</div>
+                <div class="metric-number" data-target="90">0</div>
+                <div class="metric-suffix">+</div>
+                <div class="metric-label">Students Tutored</div>
+                <div class="metric-desc">Machine Learning Concepts</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-icon">🏆</div>
+                <div class="metric-number" data-target="3">0</div>
+                <div class="metric-suffix"></div>
+                <div class="metric-label">Major Awards</div>
+                <div class="metric-desc">Competition Wins & Recognition</div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- GitHub Stats -->
+    <section class="stats-section">
+        <h2>Development Activity</h2>
+        <div id="profile-stats"></div>
+    </section>
 
-    
-      
-    <h2>Latest Projects</h2>
-    <div class="projects">
-    
-    </div>
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="projects"></div>
+        <div class="projects-cta">
+            <a href="projects/" class="btn btn-primary">View All Projects</a>
+        </div>
+    </section>
 
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <h2>Let's Build Something Amazing</h2>
+        <p>Interested in AI automation, data science, or just want to chat about tech?</p>
+        
+        <div class="contact-options">
+            <div class="contact-method">
+                <div class="contact-icon">💼</div>
+                <h3>Professional Inquiries</h3>
+                <p>Full-time opportunities, internships, consulting</p>
+                <a href="mailto:ishaangosain08@gmail.com?subject=Professional Opportunity" class="btn btn-primary">Email Me</a>
+            </div>
+            
+            <div class="contact-method">
+                <div class="contact-icon">🤝</div>
+                <h3>Collaboration</h3>
+                <p>Open source projects, research partnerships</p>
+                <a href="https://linkedin.com/in/ishaan-gosain-275aa6286" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
+            </div>
+            
+            <div class="contact-method">
+                <div class="contact-icon">💻</div>
+                <h3>Technical Discussion</h3>
+                <p>AI/ML topics, project feedback, mentoring</p>
+                <a href="https://github.com/Igosain08" target="_blank" class="btn btn-outline">View GitHub</a>
+            </div>
+        </div>
+        
+        <div class="quick-contact">
+            <p><strong>Quick Response:</strong> 📧 ishaangosain08@gmail.com | 📱 858-372-5548</p>
+        </div>
+    </section>
 
     <script src="global.js" type="module" defer></script>
     <script src="index.js" type="module" defer></script>

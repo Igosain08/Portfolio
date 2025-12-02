@@ -1,15 +1,51 @@
 [
   {
+      "title": "Gen AI Customer Support Automation",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=300&fit=crop",
+      "description": "Built end-to-end GenAI-driven customer support automation system during Accolite x Bounteous internship using n8n, GPT-4, and Supabase Vector DB (RAG), automating 60% of routine inquiries. Implemented semantic search and sentiment-aware personalization, reducing handle time by 40% and improving First Contact Resolution by 15%.",
+      "link": "https://github.com/Igosain08/Joolca-AI-Agent-Accolite-X-Bounteous-"
+  },
+  {
+      "title": "ML Under the Hood: Interactive ML Visualization Platform",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+      "description": "Collaborated in team of 6 to build interactive ML visualization platform demonstrating K-Means, PCA, Linear Regression, and EM algorithms with step-by-step tracing. Developed React + TypeScript frontend with D3.js/Plotly.js visualizations and FastAPI backend, deployed on Render cloud platform.",
+      "link": "https://github.com/KaiiB/ml-under-the-hood-site.git"
+  },
+  {
+      "title": "Airfoil Self-Noise Prediction: Advanced ML Analysis",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=300&fit=crop",
+      "description": "Mentored team of 4 students at ACM AI @ UCSD in comprehensive ML analysis of NASA airfoil self-noise dataset (1,503 samples). Guided team to achieve R² = 0.949 using optimized XGBoost with Bayesian optimization, SHAP analysis for interpretability, and 5-fold cross-validation for aerospace engineering applications.",
+      "link": "https://github.com/NathanRLiu/acm-su-25-ai-team-1"
+  },
+  {
+      "title": "Steam Game Recommendation System",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop",
+      "description": "Built recommendation system using LLM-enhanced semantic features (SBERT embeddings) and collaborative filtering, achieving 0.93 AUC-ROC. Engineered 384-dimensional semantic embeddings from game descriptions and implemented deep learning models with comprehensive evaluation using Precision@K, Recall@K, and AUC-ROC."
+  },
+  {
+      "title": "Study Buddy AI: Cloud-Native Distributed AI System",
+      "year": 2025,
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
+      "description": "Deployed AI-powered study assistant with Kubernetes (Minikube) and Docker, orchestrating scalable microservices in a Linux environment. Automated CI/CD pipelines using Jenkins and ArgoCD (GitOps), integrating LangChain-driven NLP features and end-to-end DevOps workflow. Enhanced observability via improved logging, resource labels, and deployment documentation.",
+      "link": "https://github.com/Igosain08/Study-Buddy-AI"
+  },
+  {
       "title": "Mood-Based Music Recommendation System",
       "year": 2025,
       "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-      "description": "Won 1st place at DS3 Showcase. Built emotion-aware recommendation system processing 2,000 songs using RoBERTa transformer for YouTube comment analysis, achieving 10x performance improvement through optimized K-means clustering."
+      "description": "Led team of 4 to win 1st place at DS3 Showcase. Built emotion-aware music recommendation system processing 2,000 songs using RoBERTa transformer for YouTube comment analysis. Achieved 10x performance improvement (200ms→20ms) through optimized K-means clustering and deployed on AWS Elastic Beanstalk.",
+      "link": "http://my-music-env-optimized.eba-qwpd3pbm.us-west-2.elasticbeanstalk.com/"
   },
   {
       "title": "The Seismic Lottery: Earthquake Impact Visualization",
       "year": 2025,
       "image": "https://images.unsplash.com/photo-1547683905-f686c993aae5?w=400&h=300&fit=crop",
-      "description": "Won Best Project & People's Choice Awards (top 8% of 182 students) in DSC 106. Interactive 3D visualization using D3.js v7 demonstrating infrastructure's role in disaster impact with 60fps performance."
+      "description": "Won Best Project & People's Choice Awards (top 8% of 182 students) in DSC 106. Interactive 3D visualization using D3.js v7 demonstrating infrastructure's role in disaster impact with 60fps performance.",
+      "link": "https://vedvar43789.github.io/earthquakes/"
   },
   {
       "title": "Stock Price Prediction with Deep Learning",
